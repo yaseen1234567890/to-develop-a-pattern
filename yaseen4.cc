@@ -1,30 +1,16 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main() {
-  int row, counter = 0, counter1 = 0, h;
-  cin >> row;
-  for (int i = 1; i <= row; i++)
-  {
-    for (int j = 1; j <= row - i; j++)
-    {
-      cout << "  ";
-      ++counter;
-    }
-    while (h != 2 * i - 1)
-    {
-      if (counter <= row-1){
-        cout << i + h << " ";
-        ++counter;
-      } 
-      else {
-        ++counter1;
-        cout << i + h - 2 * counter1 << " ";
-      }
-      ++h;
-    }
-    counter1 = counter = h = 0;
-    cout << endl;
-  } 
-  return 0;
+int main()
+{
+int i,j,n;
+cout<<"enter the number of rows => ";
+cin>>n;
+for(i=0;i<n+1;i++)
+{
+for(j=0;j<i+1;j++)
+{
+cout<<"*";
+}
+cout<<"\n";
+}
 }
